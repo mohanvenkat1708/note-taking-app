@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  max-width: 960px;
+  margin-right:auto;
+  margin-left:auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.notes-list{
+  display:grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.notes{
+  background-color: #fef68a;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*This will put the first child in the top and the last one at the bottom
+  
+  Also remember: it only cares about it's direct children only
+  */
+
+  white-space: pre-wrap;
+  /* To keep new-line in the notes */
+
+  margin-bottom: 5px;
+}
+
+.notes-footer{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-note{
+  background-color: #67d7cc;
+}
+
+.new-note textarea{
+  background-color: inherit;
+  border: none;
+  resize: none;
+  
+}
+
+.new-note textarea:focus{
+  outline:none;
+}
+
+.save-btn{
+  background-color: #e1e1e1;
+  border:none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.save-btn:hover{
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.container{
+  padding-top: 15px;
+}
+
+small{
+  color: blue;
+}
+
+.delete-icon{
+  cursor: pointer;
+}
+
+.search-container{
+  background-color: #e1e1e1;
+  border-radius: 10px;
+  margin-bottom: 1.3rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-input{
+  background-color: inherit;
+  border: none;
+  width: 300px;
+}
+
+.search-input:focus{
+  outline: none;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-btn{
+  background-color: darkorange;
+  border:none;
+  
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.toggle-btn:hover{
+  background-color: orange;
+  cursor: pointer;
+}
+
+.login-container{
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #dbedd1;
+  border-radius: 15px;
+  min-height: max-content;
+  max-width: fit-content;
+  padding: 25px;
+  align-items: center;
+}
+
+.login-container h1,h3{
+  color:rgba(0, 190, 95, 0.611)
+}
+.login-container input{
+  min-width: fit-content;
+  min-height: 1.5rem;
+  display:block;
+  margin-top: 20px;
+  padding:7px;
+  border: none;
+  border-radius: 10px;
+  
+}
+
+.login-container input:focus{
+  outline:none;
+}
+
+.login-container .submit{
+  background-color: rgb(0, 234, 255);
+  border:none;
+  border-radius: 15px;
+  min-height: 2rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 2.5rem;
+  font-size:medium;
+}
+
+.login-container .submit:hover{
+  cursor: pointer;
+  background-color:cyan;
+}
+
